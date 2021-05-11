@@ -97,7 +97,9 @@ fn warn_user(device: &str) -> Result<String, Box<dyn std::error::Error>> {
     let warning_text = generate_warning_text(device_info.unwrap());
 
     println!("{}", warning_text);
-    print!("{yellow}{bold}Are you absolutely sure you want to proceed? \
+    print!("{red}{bold}THIS WILL DESTROY ALL DATA ON THE DEVICE
+THIS ACTION CANNOT BE UNDONE
+{yellow}Are you absolutely sure you want to proceed? \
 {reset}{white}[{red}y{white}/{green}N{white}]{reset}: ",
         yellow=color::Fg(color::Yellow), red=color::Fg(color::Red),
         white=color::Fg(color::White), green=color::Fg(color::Green),
