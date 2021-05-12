@@ -160,8 +160,6 @@ fn execute_dd(args: &str) -> Result<(), Box<dyn std::error::Error>>{
 
     let args: Vec<&str> = args.split(" ").collect();
 
-    println!("{:?}", args);
-
     process::Command::new("dd")
         .args(args)
         .stdout(process::Stdio::inherit())
