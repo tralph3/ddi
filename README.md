@@ -29,4 +29,4 @@ If the command doesn't have the `of` flag, or the `of` flag doesn't direct to a 
 
     $ paru -S ddi-bin
     
-Optionally, there's pre-compiled binaries for download on the [release](https://github.com/tralph3/ddi/releases) section.
+Optionally, there's pre-compiled linux binaries for download on the [release](https://github.com/tralph3/ddi/releases) section.
