@@ -30,3 +30,11 @@ If the command doesn't have the `of` flag, or the `of` flag doesn't direct to a 
     $ paru -S ddi-bin
     
 Optionally, there's pre-compiled binaries for download on the [release](https://github.com/tralph3/ddi/releases) section.
+
+If you wish to compile from source, you'll need to install the compiler. Refer [here](https://doc.rust-lang.org/book/ch01-01-installation.html) for instructions. Once that's done, simply clone the repository and build it:
+
+    $ git clone https://github.com/tralph3/ddi.git
+    $ cd ddi
+    $ cargo build --release
+
+The binary can be found in the `target/release` directory.
