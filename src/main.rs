@@ -29,7 +29,7 @@ fn main() {
 
 
     if let Err(e) = ddi::run(args) {
-        println!("Error executing program: {}", e);
+        eprintln!("Error executing program: {}", e);
         std::process::exit(1);
     }
 }
