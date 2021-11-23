@@ -47,6 +47,7 @@ impl DeviceInfo {
                 .args(&["-JO", device])
                 .output()
                 .unwrap();
+            let values = data.stdout;
             let values = std::str::from_utf8(&values).unwrap();
 
             if data.status.code() == Some(32) {
